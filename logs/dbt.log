@@ -1,0 +1,688 @@
+2021-02-07 20:55:41.691800 (MainThread): Running with dbt=0.18.1
+2021-02-07 20:55:41.966812 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, defer=None, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2021-02-07 20:55:41.989050 (MainThread): Tracking: tracking
+2021-02-07 20:55:41.989273 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58f087c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5bd61670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58eff1f0>]}
+2021-02-07 20:55:41.989599 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=15
+2021-02-07 20:55:41.989952 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2021-02-07 20:55:41.990190 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2021-02-07 20:55:41.997788 (Thread-1): Parsing macros/adapters.sql
+2021-02-07 20:55:42.027957 (Thread-1): Parsing macros/catalog.sql
+2021-02-07 20:55:42.030150 (Thread-1): Parsing macros/materializations/table.sql
+2021-02-07 20:55:42.034411 (Thread-1): Parsing macros/materializations/merge.sql
+2021-02-07 20:55:42.036530 (Thread-1): Parsing macros/materializations/view.sql
+2021-02-07 20:55:42.038120 (Thread-1): Parsing macros/materializations/incremental.sql
+2021-02-07 20:55:42.048472 (Thread-1): Parsing macros/core.sql
+2021-02-07 20:55:42.052415 (Thread-1): Parsing macros/adapters/common.sql
+2021-02-07 20:55:42.095954 (Thread-1): Parsing macros/materializations/helpers.sql
+2021-02-07 20:55:42.105108 (Thread-1): Parsing macros/materializations/table/table.sql
+2021-02-07 20:55:42.111930 (Thread-1): Parsing macros/materializations/seed/seed.sql
+2021-02-07 20:55:42.132138 (Thread-1): Parsing macros/materializations/view/view.sql
+2021-02-07 20:55:42.138231 (Thread-1): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-02-07 20:55:42.143048 (Thread-1): Parsing macros/materializations/incremental/helpers.sql
+2021-02-07 20:55:42.144842 (Thread-1): Parsing macros/materializations/incremental/incremental.sql
+2021-02-07 20:55:42.150662 (Thread-1): Parsing macros/materializations/common/merge.sql
+2021-02-07 20:55:42.163978 (Thread-1): Parsing macros/materializations/snapshot/strategies.sql
+2021-02-07 20:55:42.180089 (Thread-1): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-02-07 20:55:42.181851 (Thread-1): Parsing macros/materializations/snapshot/snapshot.sql
+2021-02-07 20:55:42.208847 (Thread-1): Parsing macros/schema_tests/relationships.sql
+2021-02-07 20:55:42.210722 (Thread-1): Parsing macros/schema_tests/not_null.sql
+2021-02-07 20:55:42.212235 (Thread-1): Parsing macros/schema_tests/unique.sql
+2021-02-07 20:55:42.213944 (Thread-1): Parsing macros/schema_tests/accepted_values.sql
+2021-02-07 20:55:42.216529 (Thread-1): Parsing macros/etc/get_custom_database.sql
+2021-02-07 20:55:42.218152 (Thread-1): Parsing macros/etc/query.sql
+2021-02-07 20:55:42.219182 (Thread-1): Parsing macros/etc/datetime.sql
+2021-02-07 20:55:42.227590 (Thread-1): Parsing macros/etc/get_custom_alias.sql
+2021-02-07 20:55:42.228537 (Thread-1): Parsing macros/etc/is_incremental.sql
+2021-02-07 20:55:42.230111 (Thread-1): Parsing macros/etc/get_custom_schema.sql
+2021-02-07 20:55:42.646908 (Thread-2): handling status request
+2021-02-07 20:55:42.647414 (Thread-2): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5bfdf970>]}
+2021-02-07 20:55:42.651242 (Thread-2): sending response (<Response 8087 bytes [200 OK]>) to 10.0.46.240
+2021-02-07 20:56:07.887444 (Thread-3): handling status request
+2021-02-07 20:56:07.889132 (Thread-3): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5bfdfac0>]}
+2021-02-07 20:56:07.891959 (Thread-3): sending response (<Response 8087 bytes [200 OK]>) to 10.0.14.37
+2021-02-07 20:56:08.187606 (Thread-4): handling run_sql request
+2021-02-07 20:56:08.188036 (Thread-4): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5bfdf7c0>]}
+2021-02-07 20:56:09.316801 (Thread-4): sending response (<Response 138 bytes [200 OK]>) to 10.0.0.211
+2021-02-07 20:56:09.338181 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 20:56:09.359694 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources
+2021-02-07 20:56:09.360234 (Thread-1): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 20:56:09.360358 (Thread-1): Compiling rpc.dbt_test.request
+2021-02-07 20:56:09.373314 (Thread-1): finished collecting timing info
+2021-02-07 20:56:09.373776 (Thread-1): Using snowflake connection "rpc.dbt_test.request".
+2021-02-07 20:56:09.373840 (Thread-1): On rpc.dbt_test.request: select * from global_support_ds.co_cancelled_orders
+limit 10
+limit 100
+2021-02-07 20:56:09.373896 (Thread-1): Opening a new connection, currently in state init
+2021-02-07 20:56:09.564496 (Thread-5): handling poll request
+2021-02-07 20:56:09.564935 (Thread-5): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58593130>]}
+2021-02-07 20:56:09.568375 (Thread-5): sending response (<Response 2886 bytes [200 OK]>) to 10.0.44.73
+2021-02-07 20:56:10.467336 (Thread-1): Snowflake query id: 019a2388-0539-0d70-0029-8504bc3bcd47
+2021-02-07 20:56:10.467468 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 3 at position 0 unexpected 'limit'.
+2021-02-07 20:56:10.467599 (Thread-1): finished collecting timing info
+2021-02-07 20:56:10.467951 (Thread-1): On rpc.dbt_test.request: Close
+2021-02-07 20:56:10.629474 (Thread-1): Got an exception: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 3 at position 0 unexpected 'limit'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 161, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 78, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 595, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 97, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, errorclass, errorvalue)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 68, in default_errorhandler
+    raise errorclass(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 3 at position 0 unexpected 'limit'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 84, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 224, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 123, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 309, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 86, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 178, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  001003 (42000): SQL compilation error:
+  syntax error line 3 at position 0 unexpected 'limit'.
+2021-02-07 20:56:10.631096 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 3 at position 0 unexpected 'limit'.", 'raw_sql': 'select * from global_support_ds.co_cancelled_orders\nlimit 10\nlimit 100', 'compiled_sql': 'select * from global_support_ds.co_cancelled_orders\nlimit 10\nlimit 100', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 145, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 349, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 52, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  001003 (42000): SQL compilation error:\n  syntax error line 3 at position 0 unexpected 'limit'.", 'raw_sql': 'select * from global_support_ds.co_cancelled_orders\nlimit 10\nlimit 100', 'compiled_sql': 'select * from global_support_ds.co_cancelled_orders\nlimit 10\nlimit 100', 'tags': None}, None)
+2021-02-07 20:56:10.824636 (Thread-6): handling poll request
+2021-02-07 20:56:10.825133 (Thread-6): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5864b790>]}
+2021-02-07 20:56:10.826706 (Thread-6): sending response (<Response 6292 bytes [200 OK]>) to 10.0.0.190
+2021-02-07 20:56:12.134429 (Thread-7): handling poll request
+2021-02-07 20:56:12.134863 (Thread-7): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58690460>]}
+2021-02-07 20:56:12.135736 (Thread-7): sending response (<Response 8891 bytes [200 OK]>) to 10.0.46.240
+2021-02-07 20:56:28.221343 (Thread-8): handling status request
+2021-02-07 20:56:28.223238 (Thread-8): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58f086a0>]}
+2021-02-07 20:56:28.226481 (Thread-8): sending response (<Response 8087 bytes [200 OK]>) to 10.0.13.84
+2021-02-07 20:56:28.492566 (Thread-9): handling run_sql request
+2021-02-07 20:56:28.493312 (Thread-9): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58574310>]}
+2021-02-07 20:56:29.569204 (Thread-9): sending response (<Response 138 bytes [200 OK]>) to 10.0.0.211
+2021-02-07 20:56:29.586121 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 20:56:29.603357 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources
+2021-02-07 20:56:29.603823 (Thread-1): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 20:56:29.603941 (Thread-1): Compiling rpc.dbt_test.request
+2021-02-07 20:56:29.616834 (Thread-1): finished collecting timing info
+2021-02-07 20:56:29.617329 (Thread-1): Using snowflake connection "rpc.dbt_test.request".
+2021-02-07 20:56:29.617407 (Thread-1): On rpc.dbt_test.request: select * from global_support_ds.co_cancelled_orders
+
+limit 100
+2021-02-07 20:56:29.617464 (Thread-1): Opening a new connection, currently in state init
+2021-02-07 20:56:29.856107 (Thread-10): handling poll request
+2021-02-07 20:56:29.856555 (Thread-10): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58597550>]}
+2021-02-07 20:56:29.858534 (Thread-10): sending response (<Response 2878 bytes [200 OK]>) to 10.0.36.137
+2021-02-07 20:56:31.205278 (Thread-11): handling poll request
+2021-02-07 20:56:31.205720 (Thread-11): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd585a1940>]}
+2021-02-07 20:56:31.206646 (Thread-11): sending response (<Response 404 bytes [200 OK]>) to 10.0.20.206
+2021-02-07 20:56:32.457888 (Thread-12): handling poll request
+2021-02-07 20:56:32.458300 (Thread-12): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd585a18e0>]}
+2021-02-07 20:56:32.459156 (Thread-12): sending response (<Response 404 bytes [200 OK]>) to 10.0.44.73
+2021-02-07 20:56:33.414737 (Thread-1): SQL status: SUCCESS 100 in 3.80 seconds
+2021-02-07 20:56:33.427926 (Thread-1): finished collecting timing info
+2021-02-07 20:56:33.428448 (Thread-1): On rpc.dbt_test.request: Close
+2021-02-07 20:56:33.745335 (Thread-13): handling poll request
+2021-02-07 20:56:33.745762 (Thread-13): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58512be0>]}
+2021-02-07 20:56:33.746883 (Thread-13): sending response (<Response 1345 bytes [200 OK]>) to 10.0.19.9
+2021-02-07 20:56:34.989333 (Thread-14): handling poll request
+2021-02-07 20:56:34.989745 (Thread-14): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58569760>]}
+2021-02-07 20:56:34.996015 (Thread-14): sending response (<Response 42437 bytes [200 OK]>) to 10.0.45.185
+2021-02-07 20:57:09.918550 (Thread-15): Got an acceptable cached parse result
+2021-02-07 20:57:10.137402 (Thread-16): handling status request
+2021-02-07 20:57:10.137821 (Thread-16): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd584d4250>]}
+2021-02-07 20:57:10.138647 (Thread-16): sending response (<Response 447 bytes [200 OK]>) to 10.0.21.83
+2021-02-07 20:57:38.993640 (Thread-17): Got an acceptable cached parse result
+2021-02-07 20:57:39.254249 (Thread-18): handling status request
+2021-02-07 20:57:39.254669 (Thread-18): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5812cf70>]}
+2021-02-07 20:57:39.255481 (Thread-18): sending response (<Response 447 bytes [200 OK]>) to 10.0.0.211
+2021-02-07 20:57:58.702234 (Thread-19): Got an acceptable cached parse result
+2021-02-07 20:57:58.953495 (Thread-20): handling status request
+2021-02-07 20:57:58.953994 (Thread-20): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd536bb7c0>]}
+2021-02-07 20:57:58.954834 (Thread-20): sending response (<Response 185 bytes [200 OK]>) to 10.0.43.188
+2021-02-07 20:58:00.208798 (Thread-21): handling status request
+2021-02-07 20:58:00.209277 (Thread-21): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5808da60>]}
+2021-02-07 20:58:00.210135 (Thread-21): sending response (<Response 447 bytes [200 OK]>) to 10.0.19.9
+2021-02-07 21:00:17.231417 (Thread-22): Got an acceptable cached parse result
+2021-02-07 21:00:17.532447 (Thread-23): handling status request
+2021-02-07 21:00:17.532867 (Thread-23): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58084c40>]}
+2021-02-07 21:00:17.533727 (Thread-23): sending response (<Response 447 bytes [200 OK]>) to 10.0.45.185
+2021-02-07 21:00:56.943444 (Thread-24): Got an acceptable cached parse result
+2021-02-07 21:00:56.989620 (Thread-24): Acquiring new snowflake connection "model.dbt_test.stg_cancelled_orders".
+2021-02-07 21:00:57.313341 (Thread-25): handling status request
+2021-02-07 21:00:57.313773 (Thread-25): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5817f0d0>]}
+2021-02-07 21:00:57.314675 (Thread-25): sending response (<Response 753 bytes [200 OK]>) to 10.0.20.206
+2021-02-07 21:05:01.235877 (Thread-26): handling status request
+2021-02-07 21:05:01.237623 (Thread-26): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5807f6d0>]}
+2021-02-07 21:05:01.238570 (Thread-26): sending response (<Response 753 bytes [200 OK]>) to 10.0.22.105
+2021-02-07 21:05:01.455839 (Thread-27): handling run_sql request
+2021-02-07 21:05:01.456339 (Thread-27): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd537118e0>]}
+2021-02-07 21:05:01.457769 (Thread-27): Connection 'model.dbt_test.stg_cancelled_orders' was properly closed.
+2021-02-07 21:05:02.630818 (Thread-27): sending response (<Response 138 bytes [200 OK]>) to 10.0.21.83
+2021-02-07 21:05:02.632587 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/task_handler.py", line 94, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 162, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 108, in _get_exec_node
+    sql, macros = self._extract_request_data(self.args.sql)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 90, in _extract_request_data
+    for block in extract_toplevel_blocks(data):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 603, in extract_toplevel_blocks
+    return BlockIterator(data).lex_for_blocks(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/_jinja_blocks.py", line 392, in lex_for_blocks
+    return list(self.find_blocks(allowed_blocks=allowed_blocks,
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/_jinja_blocks.py", line 323, in find_blocks
+    for tag in self.tag_parser.find_tags():
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/_jinja_blocks.py", line 264, in find_tags
+    yield self.handle_tag(match)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/_jinja_blocks.py", line 233, in handle_tag
+    self._expect_block_close()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/_jinja_blocks.py", line 190, in _expect_block_close
+    end_match = self._expect_match(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/_jinja_blocks.py", line 141, in _expect_match
+    dbt.exceptions.raise_compiler_error(msg)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 407, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error
+  unexpected EOF, expected tag close ("%}"), got "
+  )
+  
+  select * from unioned
+  limit 100"
+2021-02-07 21:05:02.859733 (Thread-28): handling poll request
+2021-02-07 21:05:02.860228 (Thread-28): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58208880>]}
+2021-02-07 21:05:02.861969 (Thread-28): sending response (<Response 2675 bytes [200 OK]>) to 10.0.20.206
+2021-02-07 21:05:04.160516 (Thread-29): handling poll request
+2021-02-07 21:05:04.160952 (Thread-29): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58205310>]}
+2021-02-07 21:05:04.161847 (Thread-29): sending response (<Response 2805 bytes [200 OK]>) to 10.0.43.188
+2021-02-07 21:05:16.009253 (Thread-30): handling status request
+2021-02-07 21:05:16.009699 (Thread-30): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58159d30>]}
+2021-02-07 21:05:16.010625 (Thread-30): sending response (<Response 753 bytes [200 OK]>) to 10.0.0.211
+2021-02-07 21:05:16.254174 (Thread-31): handling run_sql request
+2021-02-07 21:05:16.254606 (Thread-31): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58159a60>]}
+2021-02-07 21:05:17.460547 (Thread-31): sending response (<Response 138 bytes [200 OK]>) to 10.0.13.84
+2021-02-07 21:05:17.478543 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:05:17.487962 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 496, in catch_jinja
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 523, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 941, in from_string
+    return cls.from_code(self, self.compile(source), globals, None)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/usr/local/lib/python3.8/dist-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<unknown>", line 11, in template
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+  line 11
+    from {{ source('global_support', country~'cancelled_orders') }}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/task_handler.py", line 94, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 162, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 122, in _get_exec_node
+    rpc_node = rpc_parser.parse_remote(sql, self.args.name)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/rpc.py", line 48, in parse_remote
+    return self.parse_node(contents)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 402, in parse_node
+    self.render_update(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 377, in render_update
+    self.render_with_context(node, config)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/base.py", line 288, in render_with_context
+    get_rendered(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 570, in get_rendered
+    template = get_template(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 523, in get_template
+    return env.from_string(template_source, globals=ctx)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 499, in catch_jinja
+    raise CompilationException(str(e), node) from e
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+    line 11
+      from {{ source('global_support', country~'cancelled_orders') }}
+2021-02-07 21:05:17.798037 (Thread-32): handling poll request
+2021-02-07 21:05:17.798471 (Thread-32): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58159c40>]}
+2021-02-07 21:05:17.799702 (Thread-32): sending response (<Response 4798 bytes [200 OK]>) to 10.0.45.185
+2021-02-07 21:05:55.835352 (Thread-33): handling status request
+2021-02-07 21:05:55.835996 (Thread-33): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd53636040>]}
+2021-02-07 21:05:55.840473 (Thread-33): sending response (<Response 753 bytes [200 OK]>) to 10.0.20.206
+2021-02-07 21:05:56.215565 (Thread-34): handling run_sql request
+2021-02-07 21:05:56.216135 (Thread-34): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58530820>]}
+2021-02-07 21:05:57.282593 (Thread-34): sending response (<Response 138 bytes [200 OK]>) to 10.0.36.137
+2021-02-07 21:05:57.303167 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:05:57.322004 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/task_handler.py", line 94, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 162, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 123, in _get_exec_node
+    add_new_refs(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 46, in add_new_refs
+    process_node(config, manifest, node)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 728, in process_node
+    _process_sources_for_node(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 689, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 406, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 569, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 407, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  Rpc 'rpc.dbt_test.request' (from remote system) depends on a source named 'global_support.cocancelled_orders' which was not found
+2021-02-07 21:05:57.581384 (Thread-35): handling poll request
+2021-02-07 21:05:57.581918 (Thread-35): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd536a6190>]}
+2021-02-07 21:05:57.755714 (Thread-35): sending response (<Response 3119 bytes [200 OK]>) to 10.0.20.206
+2021-02-07 21:06:08.937201 (Thread-36): handling status request
+2021-02-07 21:06:08.937704 (Thread-36): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd580618e0>]}
+2021-02-07 21:06:08.938773 (Thread-36): sending response (<Response 753 bytes [200 OK]>) to 10.0.14.37
+2021-02-07 21:06:09.186271 (Thread-37): handling run_sql request
+2021-02-07 21:06:09.186706 (Thread-37): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd580655b0>]}
+2021-02-07 21:06:10.237982 (Thread-37): sending response (<Response 138 bytes [200 OK]>) to 10.0.43.113
+2021-02-07 21:06:10.255939 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:06:10.275432 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/task_handler.py", line 94, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 162, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 123, in _get_exec_node
+    add_new_refs(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 46, in add_new_refs
+    process_node(config, manifest, node)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 728, in process_node
+    _process_sources_for_node(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 689, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 406, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 569, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 407, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  Rpc 'rpc.dbt_test.request' (from remote system) depends on a source named 'global_support.co_cancelled_orders' which was not found
+2021-02-07 21:06:10.522216 (Thread-38): handling poll request
+2021-02-07 21:06:10.522701 (Thread-38): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd53720610>]}
+2021-02-07 21:06:10.523898 (Thread-38): sending response (<Response 3122 bytes [200 OK]>) to 10.0.19.9
+2021-02-07 21:07:03.512884 (Thread-39): handling status request
+2021-02-07 21:07:03.513344 (Thread-39): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd537cf610>]}
+2021-02-07 21:07:03.514285 (Thread-39): sending response (<Response 753 bytes [200 OK]>) to 10.0.36.137
+2021-02-07 21:07:03.783937 (Thread-40): handling run_sql request
+2021-02-07 21:07:03.784855 (Thread-40): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd537cfcd0>]}
+2021-02-07 21:07:04.903687 (Thread-40): sending response (<Response 138 bytes [200 OK]>) to 10.0.21.83
+2021-02-07 21:07:04.920594 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:07:04.938905 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/task_handler.py", line 94, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 162, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 123, in _get_exec_node
+    add_new_refs(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 46, in add_new_refs
+    process_node(config, manifest, node)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 728, in process_node
+    _process_sources_for_node(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 689, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 406, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 569, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 407, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  Rpc 'rpc.dbt_test.request' (from remote system) depends on a source named 'global_support.co_cancelled_orders' which was not found
+2021-02-07 21:07:05.173297 (Thread-41): handling poll request
+2021-02-07 21:07:05.173737 (Thread-41): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd53757b50>]}
+2021-02-07 21:07:05.174916 (Thread-41): sending response (<Response 3122 bytes [200 OK]>) to 10.0.13.84
+2021-02-07 21:07:25.980669 (Thread-42): handling status request
+2021-02-07 21:07:25.981157 (Thread-42): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd537cf8b0>]}
+2021-02-07 21:07:25.982104 (Thread-42): sending response (<Response 753 bytes [200 OK]>) to 10.0.0.211
+2021-02-07 21:07:26.237594 (Thread-43): handling run_sql request
+2021-02-07 21:07:26.238003 (Thread-43): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd537574f0>]}
+2021-02-07 21:07:27.300491 (Thread-43): sending response (<Response 138 bytes [200 OK]>) to 10.0.43.113
+2021-02-07 21:07:27.316952 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:07:27.341447 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/task_handler.py", line 94, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 162, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 123, in _get_exec_node
+    add_new_refs(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 46, in add_new_refs
+    process_node(config, manifest, node)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 728, in process_node
+    _process_sources_for_node(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 689, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 406, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 569, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 407, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  Rpc 'rpc.dbt_test.request' (from remote system) depends on a source named 'global_support.co_cancelled_orders' which was not found
+2021-02-07 21:07:27.629853 (Thread-44): handling poll request
+2021-02-07 21:07:27.630605 (Thread-44): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd580e7c40>]}
+2021-02-07 21:07:27.631947 (Thread-44): sending response (<Response 3122 bytes [200 OK]>) to 10.0.44.73
+2021-02-07 21:07:34.850548 (Thread-45): Got an acceptable cached parse result
+2021-02-07 21:07:35.149815 (Thread-46): handling status request
+2021-02-07 21:07:35.155023 (Thread-46): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd53758160>]}
+2021-02-07 21:07:35.155815 (Thread-46): sending response (<Response 447 bytes [200 OK]>) to 10.0.36.137
+2021-02-07 21:07:38.931294 (Thread-47): handling status request
+2021-02-07 21:07:38.932040 (Thread-47): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58567100>]}
+2021-02-07 21:07:38.933377 (Thread-47): sending response (<Response 447 bytes [200 OK]>) to 10.0.0.190
+2021-02-07 21:07:39.269555 (Thread-48): handling compile_sql request
+2021-02-07 21:07:39.269970 (Thread-48): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd536d5580>]}
+2021-02-07 21:07:40.357244 (Thread-48): sending response (<Response 138 bytes [200 OK]>) to 10.0.43.188
+2021-02-07 21:07:40.374854 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:07:40.394030 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 1 source
+2021-02-07 21:07:40.394469 (Thread-1): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:07:40.394574 (Thread-1): Compiling rpc.dbt_test.request
+2021-02-07 21:07:40.409915 (Thread-1): finished collecting timing info
+2021-02-07 21:07:40.410145 (Thread-1): finished collecting timing info
+2021-02-07 21:07:40.729609 (Thread-49): handling poll request
+2021-02-07 21:07:40.730417 (Thread-49): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd53058eb0>]}
+2021-02-07 21:07:40.739121 (Thread-49): sending response (<Response 5657 bytes [200 OK]>) to 10.0.43.113
+2021-02-07 21:07:52.326993 (Thread-50): handling status request
+2021-02-07 21:07:52.327421 (Thread-50): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd530586d0>]}
+2021-02-07 21:07:52.328286 (Thread-50): sending response (<Response 447 bytes [200 OK]>) to 10.0.46.240
+2021-02-07 21:07:52.616850 (Thread-51): handling run_sql request
+2021-02-07 21:07:52.617354 (Thread-51): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5305b3a0>]}
+2021-02-07 21:07:53.737264 (Thread-51): sending response (<Response 138 bytes [200 OK]>) to 10.0.46.240
+2021-02-07 21:07:53.753514 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:07:53.772517 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 1 source
+2021-02-07 21:07:53.772939 (Thread-1): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:07:53.773077 (Thread-1): Compiling rpc.dbt_test.request
+2021-02-07 21:07:53.792327 (Thread-1): finished collecting timing info
+2021-02-07 21:07:53.792902 (Thread-1): Using snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:07:53.792962 (Thread-1): On rpc.dbt_test.request: with unioned as (
+    
+
+    
+
+        select distinct order_id,
+        created_at,
+        cancelation_reason,
+        'co' as country_id
+
+        from FIVETRAN.global_support_ds.co_cancelled_orders
+        where created_at::date = current_date - interval '1d'
+    
+)
+
+select * from unioned
+limit 100
+2021-02-07 21:07:53.793026 (Thread-1): Opening a new connection, currently in state init
+2021-02-07 21:07:54.021628 (Thread-52): handling poll request
+2021-02-07 21:07:54.022143 (Thread-52): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd53000cd0>]}
+2021-02-07 21:07:54.024281 (Thread-52): sending response (<Response 3129 bytes [200 OK]>) to 10.0.45.185
+2021-02-07 21:07:55.155088 (Thread-1): SQL status: SUCCESS 100 in 1.36 seconds
+2021-02-07 21:07:55.158331 (Thread-1): finished collecting timing info
+2021-02-07 21:07:55.158762 (Thread-1): On rpc.dbt_test.request: Close
+2021-02-07 21:07:55.313104 (Thread-53): handling poll request
+2021-02-07 21:07:55.313580 (Thread-53): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd52f37d90>]}
+2021-02-07 21:07:55.314772 (Thread-53): sending response (<Response 1345 bytes [200 OK]>) to 10.0.22.105
+2021-02-07 21:07:56.608160 (Thread-54): handling poll request
+2021-02-07 21:07:56.608606 (Thread-54): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd584d6100>]}
+2021-02-07 21:07:56.612944 (Thread-54): sending response (<Response 8901 bytes [200 OK]>) to 10.0.46.240
+2021-02-07 21:24:02.779289 (Thread-55): handling status request
+2021-02-07 21:24:02.781622 (Thread-55): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd580f00d0>]}
+2021-02-07 21:24:02.782797 (Thread-55): sending response (<Response 447 bytes [200 OK]>) to 10.0.0.211
+2021-02-07 21:24:03.038187 (Thread-56): handling compile_sql request
+2021-02-07 21:24:03.038618 (Thread-56): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd537ed790>]}
+2021-02-07 21:24:04.141766 (Thread-56): sending response (<Response 138 bytes [200 OK]>) to 10.0.44.73
+2021-02-07 21:24:04.158905 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:24:04.178756 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/task_handler.py", line 94, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 162, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 123, in _get_exec_node
+    add_new_refs(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 46, in add_new_refs
+    process_node(config, manifest, node)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 728, in process_node
+    _process_sources_for_node(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 689, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/parser/manifest.py", line 406, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 569, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 407, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in rpc request (from remote system)
+  Rpc 'rpc.dbt_test.request' (from remote system) depends on a source named 'global_support.br_cancelled_orders' which was not found
+2021-02-07 21:24:04.446134 (Thread-57): handling poll request
+2021-02-07 21:24:04.446628 (Thread-57): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd530520d0>]}
+2021-02-07 21:24:04.447936 (Thread-57): sending response (<Response 3190 bytes [200 OK]>) to 10.0.28.26
+2021-02-07 21:24:33.172309 (Thread-58): Got an acceptable cached parse result
+2021-02-07 21:24:33.432522 (Thread-59): handling status request
+2021-02-07 21:24:33.433003 (Thread-59): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58574160>]}
+2021-02-07 21:24:33.433961 (Thread-59): sending response (<Response 447 bytes [200 OK]>) to 10.0.14.37
+2021-02-07 21:24:34.469560 (Thread-60): Got an acceptable cached parse result
+2021-02-07 21:24:34.707310 (Thread-61): handling status request
+2021-02-07 21:24:34.707706 (Thread-61): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd581b3f10>]}
+2021-02-07 21:24:34.708379 (Thread-61): sending response (<Response 185 bytes [200 OK]>) to 10.0.46.240
+2021-02-07 21:24:35.952015 (Thread-62): handling status request
+2021-02-07 21:24:35.952449 (Thread-62): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58545040>]}
+2021-02-07 21:24:35.953283 (Thread-62): sending response (<Response 447 bytes [200 OK]>) to 10.0.20.206
+2021-02-07 21:24:36.923842 (Thread-63): handling status request
+2021-02-07 21:24:36.924334 (Thread-63): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58545220>]}
+2021-02-07 21:24:36.925276 (Thread-63): sending response (<Response 447 bytes [200 OK]>) to 10.0.13.84
+2021-02-07 21:24:37.233884 (Thread-64): handling compile_sql request
+2021-02-07 21:24:37.234391 (Thread-64): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5855d0a0>]}
+2021-02-07 21:24:38.313261 (Thread-64): sending response (<Response 138 bytes [200 OK]>) to 10.0.13.84
+2021-02-07 21:24:38.330005 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:24:38.350078 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 2 sources
+2021-02-07 21:24:38.350490 (Thread-1): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:24:38.350598 (Thread-1): Compiling rpc.dbt_test.request
+2021-02-07 21:24:38.367007 (Thread-1): finished collecting timing info
+2021-02-07 21:24:38.367228 (Thread-1): finished collecting timing info
+2021-02-07 21:24:38.541461 (Thread-65): handling poll request
+2021-02-07 21:24:38.541921 (Thread-65): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd73d93940>]}
+2021-02-07 21:24:38.546833 (Thread-65): sending response (<Response 6711 bytes [200 OK]>) to 10.0.19.9
+2021-02-07 21:24:47.171014 (Thread-66): handling status request
+2021-02-07 21:24:47.171707 (Thread-66): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5bd47580>]}
+2021-02-07 21:24:47.173079 (Thread-66): sending response (<Response 447 bytes [200 OK]>) to 10.0.0.211
+2021-02-07 21:24:47.512290 (Thread-67): handling run_sql request
+2021-02-07 21:24:47.512729 (Thread-67): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5bd470a0>]}
+2021-02-07 21:24:48.645539 (Thread-67): sending response (<Response 138 bytes [200 OK]>) to 10.0.46.240
+2021-02-07 21:24:48.663203 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:24:48.685830 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 2 sources
+2021-02-07 21:24:48.686405 (Thread-1): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:24:48.686526 (Thread-1): Compiling rpc.dbt_test.request
+2021-02-07 21:24:48.704942 (Thread-1): finished collecting timing info
+2021-02-07 21:24:48.705821 (Thread-1): Using snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:24:48.705895 (Thread-1): On rpc.dbt_test.request: with unioned as (
+    
+
+    
+
+        select distinct order_id,
+        created_at,
+        cancelation_reason,
+        'co' as country_id
+
+        from FIVETRAN.global_support_ds.co_cancelled_orders
+        where created_at::date = current_date - interval '1d'
+        union all
+    
+
+        select distinct order_id,
+        created_at,
+        cancelation_reason,
+        'br' as country_id
+
+        from FIVETRAN.global_support_ds.br_cancelled_orders
+        where created_at::date = current_date - interval '1d'
+        
+    
+)
+
+select * from unioned
+limit 100
+2021-02-07 21:24:48.705953 (Thread-1): Opening a new connection, currently in state init
+2021-02-07 21:24:48.884551 (Thread-68): handling poll request
+2021-02-07 21:24:48.885086 (Thread-68): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd585c1460>]}
+2021-02-07 21:24:49.000101 (Thread-68): sending response (<Response 3406 bytes [200 OK]>) to 10.0.28.26
+2021-02-07 21:24:50.310767 (Thread-69): handling poll request
+2021-02-07 21:24:50.311193 (Thread-69): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5855dd60>]}
+2021-02-07 21:24:50.312087 (Thread-69): sending response (<Response 404 bytes [200 OK]>) to 10.0.14.37
+2021-02-07 21:24:50.802536 (Thread-1): SQL status: SUCCESS 100 in 2.10 seconds
+2021-02-07 21:24:50.806083 (Thread-1): finished collecting timing info
+2021-02-07 21:24:50.806470 (Thread-1): On rpc.dbt_test.request: Close
+2021-02-07 21:24:51.830470 (Thread-70): handling poll request
+2021-02-07 21:24:51.830909 (Thread-70): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd52e3f0a0>]}
+2021-02-07 21:24:51.835104 (Thread-70): sending response (<Response 10898 bytes [200 OK]>) to 10.0.13.84
+2021-02-07 21:32:28.931247 (Thread-71): handling status request
+2021-02-07 21:32:28.933208 (Thread-71): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd581d30d0>]}
+2021-02-07 21:32:28.934175 (Thread-71): sending response (<Response 447 bytes [200 OK]>) to 10.0.36.137
+2021-02-07 21:32:29.217485 (Thread-72): handling compile_sql request
+2021-02-07 21:32:29.217957 (Thread-72): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd581d39d0>]}
+2021-02-07 21:32:30.366544 (Thread-72): sending response (<Response 138 bytes [200 OK]>) to 10.0.28.26
+2021-02-07 21:32:30.368309 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/task_handler.py", line 94, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 162, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 108, in _get_exec_node
+    sql, macros = self._extract_request_data(self.args.sql)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 90, in _extract_request_data
+    for block in extract_toplevel_blocks(data):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 603, in extract_toplevel_blocks
+    return BlockIterator(data).lex_for_blocks(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/_jinja_blocks.py", line 392, in lex_for_blocks
+    return list(self.find_blocks(allowed_blocks=allowed_blocks,
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/_jinja_blocks.py", line 332, in find_blocks
+    dbt.exceptions.raise_compiler_error((
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 407, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error
+  Got an unexpected control flow end tag, got endfor but never saw a preceeding for (@ 14:4)
+2021-02-07 21:32:30.686870 (Thread-73): handling poll request
+2021-02-07 21:32:30.687363 (Thread-73): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd52e84820>]}
+2021-02-07 21:32:30.688585 (Thread-73): sending response (<Response 2207 bytes [200 OK]>) to 10.0.19.9
+2021-02-07 21:32:39.982012 (Thread-74): handling status request
+2021-02-07 21:32:39.982552 (Thread-74): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58515430>]}
+2021-02-07 21:32:39.983582 (Thread-74): sending response (<Response 447 bytes [200 OK]>) to 10.0.22.105
+2021-02-07 21:32:40.240124 (Thread-75): handling run_sql request
+2021-02-07 21:32:40.240598 (Thread-75): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd58515910>]}
+2021-02-07 21:32:41.305883 (Thread-75): sending response (<Response 138 bytes [200 OK]>) to 10.0.36.137
+2021-02-07 21:32:41.307691 (MainThread): dbt runtime exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/task_handler.py", line 94, in task_exec
+    result = self.task.handle_request()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 162, in handle_request
+    node = self._get_exec_node()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 108, in _get_exec_node
+    sql, macros = self._extract_request_data(self.args.sql)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 90, in _extract_request_data
+    for block in extract_toplevel_blocks(data):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/jinja.py", line 603, in extract_toplevel_blocks
+    return BlockIterator(data).lex_for_blocks(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/_jinja_blocks.py", line 392, in lex_for_blocks
+    return list(self.find_blocks(allowed_blocks=allowed_blocks,
+  File "/usr/local/lib/python3.8/dist-packages/dbt/clients/_jinja_blocks.py", line 332, in find_blocks
+    dbt.exceptions.raise_compiler_error((
+  File "/usr/local/lib/python3.8/dist-packages/dbt/exceptions.py", line 407, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error
+  Got an unexpected control flow end tag, got endfor but never saw a preceeding for (@ 14:4)
+2021-02-07 21:32:41.570842 (Thread-76): handling poll request
+2021-02-07 21:32:41.571284 (Thread-76): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd581b3c10>]}
+2021-02-07 21:32:41.572470 (Thread-76): sending response (<Response 2203 bytes [200 OK]>) to 10.0.22.105
+2021-02-07 21:33:13.875387 (Thread-77): handling status request
+2021-02-07 21:33:13.875860 (Thread-77): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd581b3700>]}
+2021-02-07 21:33:13.876781 (Thread-77): sending response (<Response 447 bytes [200 OK]>) to 10.0.43.113
+2021-02-07 21:33:14.157366 (Thread-78): handling compile_sql request
+2021-02-07 21:33:14.157863 (Thread-78): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd581b34f0>]}
+2021-02-07 21:33:15.294071 (Thread-78): sending response (<Response 138 bytes [200 OK]>) to 10.0.44.73
+2021-02-07 21:33:15.314690 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:33:15.341524 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 2 sources
+2021-02-07 21:33:15.342089 (Thread-1): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:33:15.342204 (Thread-1): Compiling rpc.dbt_test.request
+2021-02-07 21:33:15.359942 (Thread-1): finished collecting timing info
+2021-02-07 21:33:15.360221 (Thread-1): finished collecting timing info
+2021-02-07 21:33:15.686118 (Thread-79): handling poll request
+2021-02-07 21:33:15.686581 (Thread-79): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd535e0dc0>]}
+2021-02-07 21:33:15.690905 (Thread-79): sending response (<Response 6622 bytes [200 OK]>) to 10.0.19.9
+2021-02-07 21:33:31.051777 (Thread-80): handling status request
+2021-02-07 21:33:31.052297 (Thread-80): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd581b3310>]}
+2021-02-07 21:33:31.053210 (Thread-80): sending response (<Response 447 bytes [200 OK]>) to 10.0.28.26
+2021-02-07 21:33:31.325472 (Thread-81): handling compile_sql request
+2021-02-07 21:33:31.325888 (Thread-81): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd5373f130>]}
+2021-02-07 21:33:32.381104 (Thread-81): sending response (<Response 138 bytes [200 OK]>) to 10.0.36.137
+2021-02-07 21:33:32.397747 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:33:32.417516 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 2 sources
+2021-02-07 21:33:32.417928 (Thread-1): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:33:32.418033 (Thread-1): Compiling rpc.dbt_test.request
+2021-02-07 21:33:32.434261 (Thread-1): finished collecting timing info
+2021-02-07 21:33:32.434482 (Thread-1): finished collecting timing info
+2021-02-07 21:33:32.692534 (Thread-82): handling poll request
+2021-02-07 21:33:32.693262 (Thread-82): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd535de100>]}
+2021-02-07 21:33:32.697542 (Thread-82): sending response (<Response 6692 bytes [200 OK]>) to 10.0.0.211
+2021-02-07 21:33:43.060844 (Thread-83): handling status request
+2021-02-07 21:33:43.061391 (Thread-83): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd52f6f1c0>]}
+2021-02-07 21:33:43.062385 (Thread-83): sending response (<Response 447 bytes [200 OK]>) to 10.0.14.37
+2021-02-07 21:33:43.285926 (Thread-84): handling compile_sql request
+2021-02-07 21:33:43.286399 (Thread-84): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd52f6f370>]}
+2021-02-07 21:33:44.317758 (Thread-84): sending response (<Response 138 bytes [200 OK]>) to 10.0.19.9
+2021-02-07 21:33:44.335047 (MainThread): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:33:44.355053 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 2 sources
+2021-02-07 21:33:44.355472 (Thread-1): Acquiring new snowflake connection "rpc.dbt_test.request".
+2021-02-07 21:33:44.355585 (Thread-1): Compiling rpc.dbt_test.request
+2021-02-07 21:33:44.371854 (Thread-1): finished collecting timing info
+2021-02-07 21:33:44.372085 (Thread-1): finished collecting timing info
+2021-02-07 21:33:44.639054 (Thread-85): handling poll request
+2021-02-07 21:33:44.639521 (Thread-85): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd52f6fb50>]}
+2021-02-07 21:33:44.644175 (Thread-85): sending response (<Response 6622 bytes [200 OK]>) to 10.0.20.206
+2021-02-07 21:35:18.092151 (Thread-86): handling status request
+2021-02-07 21:35:18.094748 (Thread-86): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e629c422-3646-464d-bdbe-37da7078dcb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd535deb50>]}
+2021-02-07 21:35:18.095775 (Thread-86): sending response (<Response 447 bytes [200 OK]>) to 10.0.0.190

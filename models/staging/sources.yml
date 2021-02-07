@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+    - name: global_support
+      schema: global_support_ds
+      tables:
+        - name: co_cancelled_orders
+        - name: br_cancelled_orders
